@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F0F0"
+    tools:context=".SplashScreen">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gbrsplash"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tinymarvel"></pl.droidsonroids.gif.GifImageView>
+    <ProgressBar
+        android:id="@+id/progresBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:progressDrawable="@drawable/tinymarvel"
+        android:elevation="10dp"
+        android:layout_marginTop="300dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>
+
+
+</LinearLayout>

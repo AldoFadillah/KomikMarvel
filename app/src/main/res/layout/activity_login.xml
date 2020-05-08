@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black"
+    tools:context=".Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Toolbar"
+        android:background="#FF0000"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="match_parent"
+            android:background="#FF0000"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textColor="@android:color/white"
+            android:text="marvel"
+            android:textAllCaps="true"
+            android:textSize="30dp"
+            android:fontFamily="@font/text_title"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_login"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/marvelheroes" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:gravity="right">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/button_circle"
+                    android:text="Lewati"
+                    android:onClick="skip_login" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:shadowColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Nama Pengguna"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/white"
+                android:shadowColor="@android:color/white"
+                android:hint="Kata Sandi"
+                android:password="true"
+                android:singleLine="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingat Saya?"
+                    android:id="@+id/checkBox"
+                    android:buttonTint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lupa Kata Sandi"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="100dp"
+                    android:onClick="forgotpassword"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Masuk"
+                android:background="#FF0000"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="#65000000"
+                android:textColor="#fff"
+                android:text="Daftar"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

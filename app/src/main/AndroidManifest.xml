@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marvelcomic">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_uas"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_uas"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".forgotpassword"></activity>
+        <activity android:name=".ultron" />
+        <activity android:name=".avengers5" />
+        <activity android:name=".avengers4" />
+        <activity android:name=".DataKomik" />
+        <activity android:name=".Login" />
+        <activity android:name=".avengers3" />
+        <activity android:name=".avengers2" />
+        <activity android:name=".avengers1" />
+        <activity android:name=".civilwar4" />
+        <activity android:name=".civilwar3" />
+        <activity android:name=".Register" />
+        <activity android:name=".civilwar2" />
+        <activity android:name=".civilwar1" />
+        <activity android:name=".ghostrider3" />
+        <activity android:name=".ghostrider2" />
+        <activity android:name=".ghostrider1" />
+        <activity android:name=".UltronComics" />
+        <activity android:name=".AvengersComics" />
+        <activity android:name=".CivilWarComics" />
+        <activity android:name=".captainamerica6" />
+        <activity android:name=".captainamerica5" />
+        <activity android:name=".captainamerica4" />
+        <activity android:name=".captainamerica3" />
+        <activity android:name=".captainamerica2" />
+        <activity android:name=".captainamerica1" />
+        <activity android:name=".doctorstrange" />
+        <activity android:name=".DoctorStrangeComics" />
+        <activity android:name=".deadpool3" />
+        <activity android:name=".deadpool2" />
+        <activity android:name=".deadpool1" />
+        <activity android:name=".GhostRiderComics" />
+        <activity android:name=".spiderman8" />
+        <activity android:name=".spiderman7" />
+        <activity android:name=".spiderman6" />
+        <activity android:name=".spiderman5" />
+        <activity android:name=".spiderman4" />
+        <activity android:name=".spiderman3" />
+        <activity android:name=".spiderman2" />
+        <activity android:name=".spiderman1" />
+        <activity android:name=".ironman8" />
+        <activity android:name=".ironman7" />
+        <activity android:name=".ironman6" />
+        <activity android:name=".ironman5" />
+        <activity android:name=".ironman4" />
+        <activity android:name=".ironman3" />
+        <activity android:name=".ironman2" />
+        <activity android:name=".ironman1" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeadpoolComics" />
+        <activity android:name=".IronManComics" />
+        <activity android:name=".CaptainAmericaComics" />
+        <activity android:name=".SpidermanComics" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

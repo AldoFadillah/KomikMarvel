@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Marvel\'s Comic</string>
+    <string name="popular_comics">Populer</string>
+    <string name="war_comic">Perang</string>
+    <string name="hero_comic">Pahlawan</string>
+    <string name="villain_comic">Penjahat</string>
+</resources>

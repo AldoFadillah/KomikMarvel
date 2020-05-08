@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_black"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:drawableLeft="@drawable/ic_arrow_back_black_24dp"></Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="MARVEL"
+                android:textAllCaps="true"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/text_title"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/txt_name"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="11dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
+        <ViewFlipper
+            android:id="@+id/v_flipper"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="spiderman"
+                android:src="@drawable/spiderman"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="captainamerica"
+                android:scaleType="fitXY"
+                android:src="@drawable/captain_amerika"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="ironman"
+                android:src="@drawable/ironman"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="ghostrider"
+                android:src="@drawable/ghostrider"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="deadpool"
+                android:src="@drawable/deadpool"/>
+        </ViewFlipper>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardsrch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="11dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:layout_marginLeft="0dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autotextnamecomics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/search_comics"
+            android:drawableTint="#000"
+            android:hint="Ketik nama komik..."
+            android:textColor="#000"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="#FFFFFF" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#F30606"
+        app:tabSelectedTextColor="#fff"
+        app:tabTextColor="@android:color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/popular_comics" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_pmb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/war_comic" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_prosarj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hero_comic" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/villain_comic" />
+    </com.google.android.material.tabs.TabLayout>
+    <com.example.marvelcomic.NonSwipeableViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pager"/>
+</LinearLayout>
